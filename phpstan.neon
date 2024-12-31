@@ -1,0 +1,123 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/nesbot/carbon/extension.neon
+parameters:
+
+    paths:
+        - Modules/Blogs/
+        - Modules/Campaigns/
+        - Modules/Categories/
+        - Modules/Countries/
+        - Modules/Faqs/
+        - Modules/Pages/
+        - Modules/Partners/
+        - Modules/Slideshows/
+        - Modules/Socials/
+        - Modules/Stories/
+        - Modules/Users/
+        - Modules/Videos/
+        - Modules/WebLinks/
+
+    # Level 10 is the highest level
+    level: 9
+
+#    ignoreErrors:
+#        - '#PHPDoc tag @var#'
+#
+    excludePaths:
+######## Blogs Module Start ###############
+        - Modules/Blogs/Tests
+        - Modules/Blogs/App/Resources
+        - Modules/Blogs/App/Providers
+        - Modules/Blogs/Database/Factories
+######## Blogs Module End ###############
+
+######## Campaigns Module Start ###############
+        - Modules/Campaigns/Tests
+        - Modules/Campaigns/App/Resources
+        - Modules/Campaigns/App/Providers
+        - Modules/Campaigns/Database/Factories
+        - Modules/Campaigns/Database/Seeders
+        - Modules/Campaigns/App/Http/Controllers/Api/Auth/Gateways
+######## Campaigns Module End ###############
+
+######## Categories Module Start ###############
+        - Modules/Categories/Tests
+        - Modules/Categories/App/Resources
+        - Modules/Categories/App/Providers
+        - Modules/Categories/Database/Factories
+######## Categories Module End ###############
+
+######## Countries Module Start ###############
+        - Modules/Countries/Tests
+        - Modules/Countries/App/Resources
+        - Modules/Countries/App/Providers
+        - Modules/Countries/Database/Factories
+        - Modules/Countries/Database/Seeders
+######## Countries Module End ###############
+
+######## Faqs Module Start ###############
+        - Modules/Faqs/Tests
+        - Modules/Faqs/App/Resources
+        - Modules/Faqs/App/Providers
+        - Modules/Faqs/Database/Factories
+######## Faqs Module End ###############
+
+######## Pages Module Start ###############
+        - Modules/Pages/Tests
+        - Modules/Pages/App/Resources
+        - Modules/Pages/App/Providers
+        - Modules/Pages/Database/Factories
+######## Pages Module End ###############
+
+######## Partners Module Start ###############
+        - Modules/Partners/Tests
+        - Modules/Partners/App/Resources
+        - Modules/Partners/App/Providers
+        - Modules/Partners/Database/Factories
+######## Partners Module End ###############
+
+######## Slideshows Module Start ###############
+        - Modules/Slideshows/Tests
+        - Modules/Slideshows/App/Resources
+        - Modules/Slideshows/App/Providers
+        - Modules/Slideshows/Database/Factories
+######## Slideshows Module End ###############
+
+######## Socials Module Start ###############
+        - Modules/Socials/Tests
+        - Modules/Socials/App/Resources
+        - Modules/Socials/App/Providers
+        - Modules/Socials/Database/Factories
+######## Socials Module End ###############
+
+######## Stories Module Start ###############
+        - Modules/Stories/Tests
+        - Modules/Stories/App/Resources
+        - Modules/Stories/App/Providers
+        - Modules/Stories/Database/Factories
+######## Stories Module End ###############
+
+######## Users Module Start ###############
+        - Modules/Users/Tests
+        - Modules/Users/App/Resources
+        - Modules/Users/App/Providers
+        - Modules/Users/Database/Factories
+        - Modules/Users/Database/Seeders
+        - Modules/Users/App/Http/Controllers/UsersAuthController.php
+######## Users Module End ###############
+
+######## Videos Module Start ###############
+        - Modules/Videos/Tests
+        - Modules/Videos/App/Resources
+        - Modules/Videos/App/Providers
+        - Modules/Videos/Database/Factories
+######## Videos Module End ###############
+
+######## WebLinks Module Start ###############
+        - Modules/WebLinks/Tests
+        - Modules/WebLinks/App/Resources
+        - Modules/WebLinks/App/Providers
+        - Modules/WebLinks/Database/Factories
+######## WebLinks Module End ###############
+

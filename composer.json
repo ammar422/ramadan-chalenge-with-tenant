@@ -1,0 +1,99 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The skeleton application for the Laravel framework.",
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "astrotomic/laravel-translatable": "^11.15",
+        "carlos-meneses/laravel-mpdf": "^2.1",
+        "fakerphp/faker": "^1.23",
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel-lang/common": "^6.4",
+        "laravel/framework": "^10.10",
+        "laravel/octane": "^2.5",
+        "laravel/sanctum": "^3.3",
+        "laravel/tinker": "^2.8",
+        "livewire/livewire": "^3.5",
+        "nwidart/laravel-modules": "^10.0",
+        "phpanonymous/lynx": "^1.0",
+        "razorpay/razorpay": "2.*",
+        "spatie/laravel-query-builder": "^6.2",
+        "tymon/jwt-auth": "^2.1",
+        "phpanonymous/dash": "*"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.9",
+        "laravel/pint": "^1.0",
+        "laravel/sail": "^1.18",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^7.0",
+        "pestphp/pest": "^2.36",
+        "spatie/laravel-ignition": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Modules\\": "Modules/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpstan": "php ./vendor/bin/phpstan analyse --memory-limit=2G",
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan lang:update"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        },
+        "merge-plugin": {
+            "include": [
+                "Modules/*/composer.json"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "dash"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

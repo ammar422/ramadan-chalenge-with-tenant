@@ -1,0 +1,22 @@
+<?php
+uses(
+    Tests\TestCase::class,
+    \Illuminate\Foundation\Testing\RefreshDatabase::class,
+)->in(
+    'users',
+    'blogs',
+    'categories',
+    'countries',
+    'faqs',
+    'pages',
+    'weblinks',
+    'campaigns',
+    'user-campaigns',
+    'donations',
+    'user-donations',
+    'partners',
+    'slideshows',
+    'socials',
+    'stories',
+    'videos',
+);

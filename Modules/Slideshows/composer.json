@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/slideshows",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SlideShows\\": "",
+            "Modules\\SlideShows\\App\\": "app/",
+            "Modules\\SlideShows\\Database\\Factories\\": "database/factories/",
+            "Modules\\SlideShows\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\SlideShows\\Tests\\": "tests/"
+        }
+    }
+}

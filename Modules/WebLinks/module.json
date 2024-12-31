@@ -1,0 +1,11 @@
+{
+    "name": "WebLinks",
+    "alias": "weblinks",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WebLinks\\App\\Providers\\WebLinksServiceProvider"
+    ],
+    "files": []
+}

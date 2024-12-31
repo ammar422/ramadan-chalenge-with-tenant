@@ -1,0 +1,15 @@
+{
+    "Users": true,
+    "Countries": true,
+    "Campaigns": true,
+    "Pages": true,
+    "SlideShows": true,
+    "Stories": true,
+    "Partners": true,
+    "Videos": true,
+    "Faqs": true,
+    "Blogs": true,
+    "WebLinks": true,
+    "Socials": true,
+    "Categories": true
+}

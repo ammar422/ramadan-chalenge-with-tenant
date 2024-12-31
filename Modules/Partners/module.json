@@ -1,0 +1,11 @@
+{
+    "name": "Partners",
+    "alias": "partners",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Partners\\App\\Providers\\PartnersServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Stories",
+    "alias": "stories",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Stories\\App\\Providers\\StoriesServiceProvider"
+    ],
+    "files": []
+}

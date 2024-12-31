@@ -1,0 +1,23 @@
+<?php
+return [
+    'Admins'                => __('dash.admins'),
+    'Users'                 => __('dash.users'),
+    'AdminGroups'           => __('dash.admin_groups'),
+    'AdminGroupRoles'       => __('dash.admin_group_roles'),
+    'Countries'             => __('dash.Countries'),
+    'Cities'                => __('dash.Cities'),
+    'Campaigns'             => __('dash.Campaigns'),
+    'Donations'             => __('dash.Donations'),
+    'Pages'                 => __('dash.Pages'),
+    'SlideShows'            => __('dash.SlideShows'),
+    'Settings'              => __('dash.Settings'),
+    'Stories'               => __('dash.Stories'),
+    'Partners'              => __('dash.Partners'),
+    'Videos'                => __('dash.Videos'),
+    'Faqs'                  => __('dash.Faqs'),
+    'Blogs'                 => __('dash.Blogs'),
+    'WebLinks'              => __('dash.WebLinks'),
+    'Socials'               => __('dash.Socials'),
+    'Categories'            => __('dash.Categories'),
+    'CampaignUpdates'       => __('dash.CampaignUpdates'),
+];
